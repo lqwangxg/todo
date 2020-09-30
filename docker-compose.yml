@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    image: lqwangxg/node
+    command: npm run start
+    volumes:
+      - ~/todo/db:/etc/todos
+      - ~/todo:/app
+    ports:
+      - 3000:3000
