@@ -2,9 +2,10 @@ version: "3.8"
 services:
   web:
     image: lqwangxg/node
-    command: npm run start
+    command: sh -c "npm install &&  npm run start"
+    working_dir: /app
     volumes:
+      - ~/todo/:/app
       - ~/todo/db:/etc/todos
-      - ~/todo:/app
     ports:
       - 3000:3000
