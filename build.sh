@@ -1,6 +1,6 @@
 ## define variables
 builder_name="lqwangxg/node"
-app_name=/root/tsnode
+app_name=$(pwd)
 
 docker run -it --rm  \
  -w /app\

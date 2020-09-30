@@ -7,7 +7,8 @@
     "prettify": "prettier -l --write \"**/*.js\"",
     "test": "jest",
     "dev": "nodemon src/index.js",
-    "start": " npm run dev"
+    "start": " npm run dev",
+    "build": " npm run dev"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
